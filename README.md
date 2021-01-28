@@ -9,4 +9,9 @@ ___________________________________________________________
 
 -2.❗️Далее создаем новый файл и импортируем необходимый модуль - from cryptography.fernet import Fernet
 
--3.❗️
+-3.❗️После того как мы импортировали модуль создадим ключ и запишем его в файл, например в keys.key
+      
+#def write_key():
+  keys = Fernet.generate_keys()
+  with open('C:/Users/Desktop/keys.key' 'wb') as keys_file:
+   keys_file.write(key)
