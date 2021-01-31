@@ -1,4 +1,5 @@
 from cryptography.fernet import Fernet
+
 def write_key():
  keys = Fernet.generate_keys()
  with open('C:/Users/Desktop/keys.key' 'wb') as keys_file:
@@ -25,6 +26,4 @@ def encryp(filename, keys):
 
  keys = load_key()
  file = 'C:/Users/Desktop/keyS.txt'
-
-write_key()
  
